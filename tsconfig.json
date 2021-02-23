@@ -1,0 +1,28 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    //"target": "es2015",
+    "target": "es5",
+    //
+    "module": "esnext",
+    "lib": [
+      "es2018",
+      "dom"
+    ]
+    /* "lib": [
+      "dom",
+      "es2015.promise",
+      "es5",
+      "es6"
+    ], */
+  }
+}
