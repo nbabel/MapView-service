@@ -23,8 +23,9 @@ export class EsriMapComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     // Initialize MapView and return an instance of MapView
-    this.mapViewService.initializeMap(this.mapViewEl).then(r => {
-      console.log(r);
+    this.mapViewService.initializeMap(this.mapViewEl).then(view => {
+      console.log(view);
+      this.view = view;
       this.mapLoadedEvent.emit(true);
     });
   }
